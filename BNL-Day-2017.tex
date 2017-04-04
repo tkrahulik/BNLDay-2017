@@ -72,9 +72,9 @@ linewidth=2pt % Width of the border lines around content boxes
 %----------------------------------------------------------------------------------------
 %
 {\includegraphics[height=4em]{SB_Logo.png}} % First university/lab logo on the left
-{\bf\textsc{Studying Deep Inelastic Scattering in e-p Collisions for a Future Electron-Ion Collider}\vspace{0.5em}} % Poster title
+{\bf\textsc{Construction of a Magnetic Field Cloaking Device For Use in a Proposed Electron Ion Collider}\vspace{0.5em}} % Poster title
 {\textsc{\ Daniel Bhatti, Sean Jeffas, \textbf{Thomas Krahulik}, \textbf{Joshua LaBounty}, \\ Rourke Sekelsky, Abhay Deshpande, Nils Feege \\ Stony Brook University Department of Physics and Astronomy}}% Author names and institution
-{\hspace{10mm} \includegraphics[height=8em]{eiclogo.eps}} % Second university/lab logo on the right
+{\hspace{10mm} \includegraphics[height=8em]{CreatedEICLogo.png}} % Second university/lab logo on the right
 
 %----------------------------------------------------------------------------------------
 %	Electron Ion Collider
@@ -82,19 +82,8 @@ linewidth=2pt % Width of the border lines around content boxes
 
 \headerbox{Background}{name=EIC,column=0,row=0}{
 
-A future Electron Ion Collider (EIC) would enable an investigation into the internal structure of protons and neutrons through the collision of electrons with protons or light ions. The process of probing the inside of a hadron by scattering an electron (or other lepton) off a quark inside that hadron is known as Deep Inelastic Scattering (DIS). An EIC detector is crucial to taking measurements of DIS events. 
-%\begin{multicols}{2}
-%\begin{center}
-%\includegraphics[width=0.6\linewidth]{}
-%\captionof{figure}{}
-%\end{center}
-%\begin{center}
-%\includegraphics[width=0.6\linewidth]{Color_Glass.png}
-%\captionof{figure}{LABEL}
-%\end{center}
-%\end{multicols}
+The current design for a proposed Electron Ion Collider (EIC) calls for a hadron to electron beam momentum ratio of 12:1, resulting in a large number of particles produced in the forward region. Employing a substantial magnetic field orthogonal to the beam line is optimal for momentum analysis of such particles, but the collider beams must be shielded from the orthogonal field to avoid beam deflection and depolarization. Here, we demonstrate the potential of a magnetic field cloaking device to passively create a field free tunnel while minimizing distortions of the applied external field
 
-%\vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
 }
 
 %----------------------------------------------------------------------------------------
@@ -102,22 +91,36 @@ A future Electron Ion Collider (EIC) would enable an investigation into the inte
 %----------------------------------------------------------------------------------------
 
 %\headerbox{Pythia Simulation}{name=method,column=0,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
-\headerbox{Theory}{name=method,column=0,below=EIC}{
-\begin{center}
-\includegraphics[width=0.45\linewidth]{ShieldConcept.png}
-\captionof{figure}{Superconductor Shield Theory}
-\end{center}
+\headerbox{Cloak Construction}{name=method,column=0,below=EIC,above=bottom}{
+
+%\begin{multicols}{2}
+
+%\begin{center}
+%\includegraphics[width=0.97\linewidth]{ShieldConcept.png}
+%\captionof{figure}{Superconductors expel magnetic fields through the Meissner effect.}
+%\end{center}
+
+%\begin{center}
+%\includegraphics[width=0.92\linewidth]{Ferromagnet-Concept.png}
+%\captionof{figure}{Ferromagnet Theory}
+%\end{center}
+
+%\end{multicols}
+
+A superconductor naturally expels magnetic field lines through the Meissner effect, while a ferromagnet pulls them in. By combining the two effects, you can achieve a field free region in the center while keeping the outside field undisturbed.
 
 \begin{center}
-\includegraphics[width=0.45\linewidth]{Ferromagnet-Concept.png}
-\captionof{figure}{Ferromagnet Theory}
+\includegraphics[width=\linewidth]{SC_plus_FM_equals_Cloak.png}
+\captionof{figure}{Our magnetic cloak is composed of two concentric cylinders: one made of superconductor and one made of a ferromagnet/epoxy mixture.}
 \end{center}
+
+We demonstrate the feasibility of this cloak using 45-layers of YBCO superconductor surrounded by a carefully tuned epoxy/ferromagnet mixture.
 
 \begin{center}
-\includegraphics[width=0.45\linewidth]{CloakConcept.png}
-\captionof{figure}{Magnetic Cloak Theory}
+\includegraphics[width=0.46\linewidth]{pic_sc45layer.jpg}
+\includegraphics[width=0.46\linewidth]{pic_cloak.jpg}
+\captionof{figure}{Images of our 45-layer cloak prototype.}
 \end{center}
-
 
 }
 
@@ -128,20 +131,19 @@ A future Electron Ion Collider (EIC) would enable an investigation into the inte
 \headerbox{Superconductor Shielding}{name=introduction,column=1,span=2,row=0}{
 \begin{multicols}{3}
 \begin{center}
-\includegraphics[width=1.0\linewidth]{Pythia_peta_e_10M_250x010.png}
+\includegraphics[width=1.0\linewidth]{placeholder.png}
 \captionof{figure}{Momentum Distribution of Electrons as a Function of Pseudorapidity $\eta$}
 \end{center}
 \begin{center}
-\includegraphics[width=1.0\linewidth]{LepA.png}
+\includegraphics[width=1.0\linewidth]{placeholder.png}
 \captionof{figure}{Distribution of $e^{-}$ as a Function of $x$ and $Q^2$ Compared to its Scattering Angle}
 \end{center}
 \begin{center}
-\includegraphics[width=1.0\linewidth]{LOI_Rep_Q2x_K.png}
+\includegraphics[width=1.0\linewidth]{placeholder.png}
 \captionof{figure}{Distribution of Kaons as a Function of $x$ and $Q^2$}
 \end{center}
 \end{multicols}
 
-\normalsize An important step in the process of designing an EIC detector is the simulation of the electron-proton collisions that would occur within the collider. We use a simulation software known as Pythia 6, a Monte-Carlo event generator for high energy particle collisions. Simulated data can also be input into other types of software to perform an analysis of detector acceptance and performance.
 
 }
 
@@ -151,48 +153,31 @@ A future Electron Ion Collider (EIC) would enable an investigation into the inte
 
 %\headerbox{Pythia Analysis}{name=results,column=2,span=2,row=0}{
 \headerbox{Travel Opportunities}{name=results,column=3,row=0}{
-In electron-proton collisions it is important to account for a photon that is radiated from the electron as it nears the proton. This emitted photon will slightly change the the kinematics of the electron and therefore the rest of the collision kinematics. Therefore we need to account for the photon's energy and angle in order to correct the kinematics for the electron, and the rest of the collision. The equations to calculate these corrections are shown below.
 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{ANL-Pic.JPG}
 \captionof{figure}{Measuring magnetic field cloaking at Argonne National Lab}
 \end{center}
-\vspace{-2mm}
-\large \begin{equation}
-Q_{true}^{2} = Q^2 + 2E_{\gamma} (\nu \sqrt{\nu^{2} + Q^2} cos(\theta_{\gamma}))
-\end{equation}
-\large \begin{equation}
-x_{true} = \frac{Q_{true}^2}{2M \nu_{true}}
-\end{equation}
 
-\normalsize In order to account for these radiative corrections in simulations of electron-proton collisions, we use another event generator known as RADGEN which can calculate the true kinematics of the collisions.
 }
-
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
-%\headerbox{References}{name=references,column=0,above=bottom}{
-
-%\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
-%\nocite{*} % Insert publications even if they are not cited in the poster
-%\small{ % Reduce the font size in this block
-%\bibliographystyle{unsrt}
-%\bibliography{sample} % Use sample.bib as the bibliography file
-%}}
 
 %----------------------------------------------------------------------------------------
 %	References
 %----------------------------------------------------------------------------------------
 
 %\headerbox{Contact Information}{name=contact,column=3,aligned=references,above=bottom}{ % This block is as tall as the references block
-\headerbox{References}{name=contact,column=3,above=bottom}{ % This block is as tall as the references block
-\footnotesize \begin{enumerate}
-\item Accardi, A., et al., \textit{Electron Ion Collider: The Next QCD Frontier} arXiv:1212.1701v3(2014)
-\item Akushevich, I., H. Bottcher, D. Ryckbosch, \textit{RADGEN 1.0: Monte Carlo Generator for Radiated Events in DIS on Polarized and Unpolarized Targets} arXiv:hep-ph/9906408v1(1999)
-\item PHENIX Collaboration, \textit{Concept for an Electron Ion Collider (EIC) detector built around the BaBar solenoid} arXiv:1402.1209v1(2014)
-\item Wolf, G. \textit{HERA Physics} DESY 94-022 (1994).
-\end{enumerate}
+\headerbox{References}{name=contact,column=3,below=results,above=bottom}{ % This block is as tall as the references block
+\begin{tiny}
+
+Accardi, A., et al., \textit{Electron Ion Collider: The Next QCD Frontier} arXiv:1212.1701v3(2014)
+\smallbreak
+Akushevich, I., H. Bottcher, D. Ryckbosch, \textit{RADGEN 1.0: Monte Carlo Generator for Radiated Events in DIS on Polarized and Unpolarized Targets} arXiv:hep-ph/9906408v1(1999)
+\smallbreak
+PHENIX Collaboration, \textit{Concept for an Electron Ion Collider (EIC) detector built around the BaBar solenoid} arXiv:1402.1209v1(2014)
+\smallbreak
+Wolf, G. \textit{HERA Physics} DESY 94-022 (1994).
+
+\end{tiny}
 }
 
 %----------------------------------------------------------------------------------------
