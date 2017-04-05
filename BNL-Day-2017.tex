@@ -73,11 +73,11 @@ linewidth=2pt % Width of the border lines around content boxes
 %
 {\includegraphics[height=4em]{SB_Logo.png}} % First university/lab logo on the left
 {\bf\textsc{Construction of a Magnetic Field Cloaking Device For Use in a Proposed Electron Ion Collider}\vspace{0.5em}} % Poster title
-{\textsc{\textbf{Thomas Krahulik}, \textbf{Joshua LaBounty}, Dr. Abhay Deshpande, Dr. Nils Feege \\ Stony Brook University, Department of Physics and Astronomy \\ Brookhaven National Laboratory $\bullet$ Argonne Nation al Laboratory}}% Author names and institution
+{\textsc{\textbf{Thomas Krahulik}, \textbf{Joshua LaBounty}, Dr. Abhay Deshpande, Dr. Nils Feege, et. al. \\ Stony Brook University, Department of Physics and Astronomy \\ Brookhaven National Laboratory $\bullet$ Argonne Nation al Laboratory}}% Author names and institution
 {\hspace{10mm} \includegraphics[height=8em]{CreatedEICLogo.png}} % Second university/lab logo on the right
 
 %----------------------------------------------------------------------------------------
-%	Electron Ion Collider
+%	Background
 %----------------------------------------------------------------------------------------
 
 \headerbox{Background}{name=EIC,column=0,row=0}{
@@ -87,25 +87,10 @@ The current design for a proposed Electron Ion Collider (EIC) calls for a hadron
 }
 
 %----------------------------------------------------------------------------------------
-%	DIS Physics
+%	Cloak Construction
 %----------------------------------------------------------------------------------------
 
-%\headerbox{Pythia Simulation}{name=method,column=0,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
 \headerbox{Cloak Construction}{name=method,column=0,below=EIC,above=bottom}{
-
-%\begin{multicols}{2}
-
-%\begin{center}
-%\includegraphics[width=0.97\linewidth]{ShieldConcept.png}
-%\captionof{figure}{Superconductors expel magnetic fields through the Meissner effect.}
-%\end{center}
-
-%\begin{center}
-%\includegraphics[width=0.92\linewidth]{Ferromagnet-Concept.png}
-%\captionof{figure}{Ferromagnet Theory}
-%\end{center}
-
-%\end{multicols}
 
 A superconductor naturally expels magnetic field lines through the Meissner effect, while a ferromagnet pulls them in. By combining the two effects, you can achieve a field free region in the center while keeping the outside field undisturbed.
 
@@ -125,7 +110,7 @@ We demonstrate the feasibility of this cloak using 45-layers of YBCO superconduc
 }
 
 %----------------------------------------------------------------------------------------
-%	Pythia Simulation
+%	SC Shielding
 %----------------------------------------------------------------------------------------
 
 \headerbox{Superconductor Shielding}{name=introduction,column=1,span=2,row=0}{
@@ -150,10 +135,9 @@ Superconductors, when cooled below their critical temperature ($T_{c}$), expel m
 }
 
 %----------------------------------------------------------------------------------------
-%	Radiative Corrections using RADGEN
+%	On the road again...
 %----------------------------------------------------------------------------------------
 
-%\headerbox{Pythia Analysis}{name=results,column=2,span=2,row=0}{
 \headerbox{Experiments on the Road}{name=results,column=3,row=0}{
 
 During the course of our experiments, we sometimes needed to travel in order to use specialized equipment. In particular, we made use of the Tandem Van de Graaff Facility at Brookhaven National Lab and the 4-Tesla Magnet Facility at Argonne National Lab.
@@ -191,36 +175,27 @@ Lorner, L., \textit{A road trip to test a magnetic cloak at Argonne National Lab
 \end{tiny}
 }
 
-%----------------------------------------------------------------------------------------
-%	Further Research
-%----------------------------------------------------------------------------------------
-
-%\headerbox{Geant4 Analysis}{name=conclusion,column=2,span=2,row=0,below=results,above=references}{
-%\headerbox{Further Research}{name=conclusion,column=3,row=0,below=results}{
-
-%\begin{multicols}{2}
-
-%\end{multicols}
-%}
-
 
 %----------------------------------------------------------------------------------------
-%	Geant4 Simulation
+%	Cloaking
 %----------------------------------------------------------------------------------------
 
 \headerbox{Magnetic Field Cloaking}{name=results2,column=1,span=2,below=introduction,bottomaligned=contact}{ % This block's bottom aligns with the bottom of the conclusion block
+
+Superconductors alone can create a field-free region in the interior of the cylinder, but distort the external field (Figure \ref{fig:distortions}). For particle accelerators, where a uniform field is necessary for momentum measurements of charged particle, this is not an ideal situation. By adding a carefully tuned ferromagnet concentric with the superconductor, we have shown that we can reduce the distortions by $90\%$ (Figure \ref{fig:cloak}).
+
 \begin{multicols}{2}
 \begin{center}
-\includegraphics[width=1.0\linewidth]{NoCloak_edit.png}
+\includegraphics[width=0.95\linewidth]{NoCloak_edit.png}
 \captionof{figure}{MRI Field with Superconductor Shield}
+\label{fig:distortions}
 \end{center}
 \begin{center}
-\includegraphics[width=0.95\linewidth]{WithCloak.png}
+\includegraphics[width=0.9\linewidth]{WithCloak.png}
 \captionof{figure}{MRI Field with Magnetic Field Cloak}
+\label{fig:cloak}
 \end{center}
 \end{multicols}
-
-
 }
 
 %----------------------------------------------------------------------------------------
